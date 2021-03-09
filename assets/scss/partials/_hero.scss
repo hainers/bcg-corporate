@@ -55,6 +55,12 @@
   margin-top: 12%;
 }
 
+@media only screen and (max-width: 360px) {
+  .hero-section--long {
+    height: 90vh;
+  }
+}
+
 @media only screen and (max-width: 768px) {
    .bcg-menu__nav {
      position: fixed;
