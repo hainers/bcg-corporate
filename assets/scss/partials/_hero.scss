@@ -5,6 +5,10 @@
   background-size: cover;
 }
 
+.menu-wrap {
+  z-index: 100;
+}
+
 .bcg-menu {
   padding: 8px;
   margin-top: 8px;
@@ -55,9 +59,14 @@
   margin-top: 12%;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 359px) {
   .hero-section--long {
     height: 90vh;
+  }
+}
+@media only screen and (max-width: 374px) {
+  .hero-section--long {
+    height: 75vh;
   }
 }
 
@@ -71,6 +80,7 @@
      background: #fff;
      z-index: 100;
      overflow: hidden;
+     transition: max-height .3s ease-in;
 
      &:before {
        content: '';

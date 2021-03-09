@@ -23,12 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="896134e4-b185-4eea-9289-747f68cb07e4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/scss/partials/_misc.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/partials/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/partials/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/partials/_hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/partials/_hero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/partials/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/partials/_typography.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,6 +97,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Test commit2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="360" y="219" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1615285214813">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="360" y="219" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1615285214813" />
     <state x="736" y="244" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1615199177250">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>

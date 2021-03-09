@@ -2634,11 +2634,107 @@ p.no-margin {
     line-height: 75px;
   }
 }
+.animated {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+.noFade {
+  -webkit-animation-name: noFade;
+  animation-name: noFade;
+  animation-duration: 0s;
+}
+
+.animate-delay-600 {
+  animation-delay: 0.6s;
+}
+
+.animate-delay-1000 {
+  animation-delay: 1s;
+}
+
+.animate-delay-1500 {
+  animation-delay: 1.5s;
+}
+
+.animate-delay-2000 {
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes noFade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes noFade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .hero-section {
   height: 70vh;
   min-height: 300px;
   background: url("../img/main-bg.jpg") center no-repeat;
   background-size: cover;
+}
+
+.menu-wrap {
+  z-index: 100;
 }
 
 .bcg-menu {
@@ -2678,9 +2774,14 @@ p.no-margin {
   margin-top: 12%;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 359px) {
   .hero-section--long {
     height: 90vh;
+  }
+}
+@media only screen and (max-width: 374px) {
+  .hero-section--long {
+    height: 75vh;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -2693,6 +2794,7 @@ p.no-margin {
     background: #fff;
     z-index: 100;
     overflow: hidden;
+    transition: max-height 0.3s ease-in;
   }
   .bcg-menu__nav:before {
     content: "";
