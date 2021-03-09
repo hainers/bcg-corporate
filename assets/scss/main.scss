@@ -1,15 +1,19 @@
 $text: #30302E;
 $light-blue: #1B75BC;
 $dark-blue: #06517F;
+$baby-blue: #83C8FE;
 
 @import 'vendor/reset';
 @import 'vendor/grid';
+@import 'vendor/spacing';
+@import 'vendor/glide';
 
 
 @import 'partials/typography';
 @import 'partials/misc';
 @import 'partials/hero';
 @import 'partials/footer';
+@import 'partials/content';
 
 
 

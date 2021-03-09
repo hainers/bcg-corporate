@@ -11,6 +11,7 @@ h1 {
 
 h2 {
   font-size: 36px;
+  line-height: 44px;
   color: $dark-blue;
 }
 
@@ -34,8 +35,22 @@ p {
   }
 }
 
+.text-big {
+  font-size: 20px;
+  line-height: 32px;
+}
+
 span {
 
+}
+
+strong {
+  font-weight: 700;
+  color: inherit;
+}
+
+.text-semi-bold {
+  font-weight: 500!important;
 }
 
 .text-white {
@@ -45,6 +60,10 @@ span {
   &:focus {
     color: #fff!important;
   }
+}
+
+.text-baby-blue {
+  color: $baby-blue!important;
 }
 @media only screen and (min-width: 768px) {
   h1 {
