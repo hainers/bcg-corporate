@@ -2611,7 +2611,7 @@ p.no-margin {
   margin: 0;
 }
 
-.text-white, .text-white:hover, .text-white:visited, .text-white:focused {
+.text-white, .text-white:hover, .text-white:visited, .text-white:focus {
   color: #fff !important;
 }
 
