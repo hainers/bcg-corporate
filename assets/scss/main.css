@@ -2611,6 +2611,10 @@ p.no-margin {
   margin: 0;
 }
 
+.text-white, .text-white:hover, .text-white:visited, .text-white:focused {
+  color: #fff !important;
+}
+
 @media only screen and (min-width: 768px) {
   h1 {
     font-size: 64px;
@@ -2745,6 +2749,9 @@ p.no-margin {
   margin-top: 32px;
   padding-top: 16px;
   background: linear-gradient(90deg, #1B75BC -30.49%, #06517F 100%);
+  color: #fff;
+}
+.bcg-footer p {
   color: #fff;
 }
 
