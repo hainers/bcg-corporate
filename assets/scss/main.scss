@@ -1,0 +1,23 @@
+$text: #30302E;
+$light-blue: #1B75BC;
+$dark-blue: #06517F;
+
+@import 'vendor/reset';
+@import 'vendor/grid';
+
+@import 'partials/typography';
+@import 'partials/hero';
+@import 'partials/footer';
+
+
+
+* {
+  font-family: 'Roboto'!important;
+  color: $text;
+}
+
+.container-full-width {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}

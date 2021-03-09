@@ -1,0 +1,53 @@
+a, a:visited, a:hover, a:focus {
+  color: $light-blue;
+}
+
+h1 {
+  font-size: 58px;
+  font-weight: 500;
+  line-height: 62px;
+  color: #fff;
+}
+
+h2 {
+  font-size: 36px;
+  color: $dark-blue;
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+p {
+
+  &.no-margin {
+    margin: 0;
+  }
+}
+
+span {
+
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 64px;
+    line-height: 75px;
+  }
+
+  h2 {
+
+  }
+
+  h3 {
+
+  }
+
+  h4 {
+
+  }
+}
