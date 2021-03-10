@@ -17,8 +17,8 @@ h2 {
 
 h3 {
   font-weight: normal;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 32px;
+  line-height: 40px;
 }
 
 h4 {
@@ -53,6 +53,10 @@ strong {
   font-weight: 500!important;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-white {
   &,
   &:hover,
@@ -64,6 +68,12 @@ strong {
 
 .text-baby-blue {
   color: $baby-blue!important;
+}
+.text-dark-blue {
+  color: $dark-blue!important;
+}
+.text-medium-dark {
+  color: $text-medium!important;
 }
 @media only screen and (min-width: 768px) {
   h1 {

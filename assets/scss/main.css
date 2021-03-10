@@ -4419,8 +4419,8 @@ h2 {
 
 h3 {
   font-weight: normal;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 32px;
+  line-height: 40px;
 }
 
 h4 {
@@ -4448,12 +4448,24 @@ strong {
   font-weight: 500 !important;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-white, .text-white:hover, .text-white:visited, .text-white:focus {
   color: #fff !important;
 }
 
 .text-baby-blue {
   color: #83C8FE !important;
+}
+
+.text-dark-blue {
+  color: #06517F !important;
+}
+
+.text-medium-dark {
+  color: #505050 !important;
 }
 
 @media only screen and (min-width: 768px) {
@@ -4893,6 +4905,69 @@ strong {
   color: #505050;
 }
 
+.bcg-blocks {
+  padding: 0;
+}
+
+.bcg-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 24px;
+  min-height: 340px;
+}
+.bcg-block h3 {
+  margin-bottom: 24px;
+}
+.bcg-block p {
+  margin-bottom: 16px;
+  line-height: 24px;
+}
+.bcg-block ul {
+  margin: 0 16px 16px;
+}
+.bcg-block ul li {
+  margin-bottom: 12px;
+}
+.bcg-block--gray {
+  background-color: #f2f2f2;
+}
+.bcg-block--blue {
+  background: linear-gradient(90deg, #1B75BC -30.49%, #06517F 100%);
+}
+.bcg-block--image {
+  min-height: 440px;
+  background: url("../img/bcg-baltics.jpg") no-repeat center;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 575px) {
+  .bcg-blocks {
+    display: flex;
+    flex-direction: column;
+  }
+  .bcg-blocks--swap .bcg-block--image {
+    order: 0;
+  }
+  .bcg-blocks--swap .bcg-block--blue {
+    order: 1;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .bcg-blocks-container {
+    margin-top: 100px;
+  }
+
+  .bcg-blocks--neg-margin {
+    margin-top: -64px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .bcg-block {
+    padding: 60px 40px;
+    min-height: 400px;
+  }
+}
 * {
   font-family: "Roboto" !important;
   color: #30302E;
