@@ -4577,6 +4577,19 @@ strong {
   background: url("../img/main-bg.jpg") center no-repeat;
   background-size: cover;
 }
+.hero-section--about {
+  position: relative;
+  background-image: url("../img/about.jpg");
+}
+.hero-section--about:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
 
 .menu-wrap {
   z-index: 100;
@@ -4933,7 +4946,7 @@ strong {
   background-color: #f2f2f2;
 }
 .bcg-block--blue {
-  background: linear-gradient(-180deg, #1B75BC 0%, #06517F 100%);
+  background: linear-gradient(180deg, #1B75BC -20%, #06517F 100%);
 }
 .bcg-block--image {
   min-height: 440px;

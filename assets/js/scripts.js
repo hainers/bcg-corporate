@@ -13,7 +13,10 @@ document.addEventListener("DOMContentLoaded", function() {
         startAt: 0,
         perView: 5,
         breakpoints: {
-            1024: {
+            1200: {
+                perView: 4
+            },
+            992: {
                 perView: 3
             },
             600: {
