@@ -179,7 +179,7 @@
   }
 
   &--blue {
-    background: linear-gradient(90deg, $light-blue -30.49%, $dark-blue 100%);
+    background: linear-gradient(-180deg, $light-blue 0%, $dark-blue 100%);
   }
 
   &--image {
