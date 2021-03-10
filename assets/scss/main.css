@@ -2735,6 +2735,30 @@ html {
   margin-left: 2rem !important;
 }
 
+.m-6 {
+  margin: 3rem !important;
+}
+
+.mt-6,
+.my-6 {
+  margin-top: 3rem !important;
+}
+
+.mr-6,
+.mx-6 {
+  margin-right: 3rem !important;
+}
+
+.mb-6,
+.my-6 {
+  margin-bottom: 3rem !important;
+}
+
+.ml-6,
+.mx-6 {
+  margin-left: 3rem !important;
+}
+
 .p-0 {
   padding: 0 !important;
 }
@@ -4344,6 +4368,25 @@ html {
   border: 0;
 }
 
+@media only screen and (max-width: 767px) {
+  .glide__arrows {
+    height: 50px;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .glide__arrow {
+    margin-right: 16px;
+    position: static;
+    transform: none;
+  }
+
+  .bcg-slider .row,
+.bcg-slider .container {
+    padding: 0;
+  }
+}
 @media only screen and (min-width: 768px) {
   .glide__slide img {
     width: 180px;
@@ -4656,7 +4699,6 @@ strong {
   }
 }
 .bcg-footer {
-  margin-top: 32px;
   padding-top: 32px;
   padding-bottom: 32px;
   background: linear-gradient(90deg, #1B75BC -30.49%, #06517F 100%);
@@ -4791,9 +4833,73 @@ strong {
   background: linear-gradient(90deg, #1B75BC -30.49%, #06517F 100%);
 }
 
+.bcg-stat {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.bcg-stat__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.bcg-stat__icon img {
+  width: 40px;
+  height: 40px;
+}
+.bcg-stat__icon--bank img {
+  width: 50px;
+  height: 50px;
+}
+.bcg-stat__number {
+  font-size: 26px;
+  line-height: 33px;
+  color: #06517F;
+}
+.bcg-stat__description {
+  font-size: 20px;
+  line-height: 23px;
+  color: #505050;
+}
+
+.bcg-team-container {
+  background-color: #f4f4f4;
+}
+
+.team-member {
+  margin-bottom: 24px;
+}
+.team-member__image {
+  border-radius: 6px;
+}
+.team-member__name {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 2px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #06517F;
+}
+.team-member__position {
+  font-size: 14px;
+  line-height: 16px;
+  color: #505050;
+}
+
 * {
   font-family: "Roboto" !important;
   color: #30302E;
+}
+
+img {
+  width: 100%;
 }
 
 .container-full-width {

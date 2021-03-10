@@ -23,29 +23,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="896134e4-b185-4eea-9289-747f68cb07e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/img/baltics_map.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/brands/aruodas.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/brands/auto24ee.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/brands/autoplius.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/brands/city24ee.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/brands/city24lv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/brands/cvbankas.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/brands/kainos.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/brands/kuldnebors.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/brands/kv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/brands/ostaee.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/brands/paslaugos.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/brands/skelbiu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/partials/_content.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/vendor/_glide.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/vendor/_spacing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/icons/banking.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/icons/brand-positioning.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/icons/governance.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/icons/piggy-bank.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/icons/team.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/team/arturas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/team/daniel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/team/daumantas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/team/justinas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/team/karin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/team/lina3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/team/maxis.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/team/simonas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/team/tarvo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/team/tomas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/team/viktorija.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/partials/_misc.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/partials/_misc.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/partials/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/partials/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/partials/_content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/partials/_content.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/partials/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/partials/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/vendor/_glide.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/vendor/_glide.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/vendor/_spacing.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/vendor/_spacing.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,21 +77,21 @@
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img/brands" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img/icons" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/img/brands" />
-      <recent name="$PROJECT_DIR$/assets/img" />
-      <recent name="$PROJECT_DIR$/assets/img/icons" />
-      <recent name="$PROJECT_DIR$/assets/img/brand-backgrounds" />
-      <recent name="$PROJECT_DIR$/assets/scss/vendor" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/scss/partials" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/img/icons" />
+      <recent name="$PROJECT_DIR$/assets/img/brands" />
+      <recent name="$PROJECT_DIR$/assets/img" />
+      <recent name="$PROJECT_DIR$/assets/img/brand-backgrounds" />
+      <recent name="$PROJECT_DIR$/assets/scss/vendor" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -107,6 +108,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test commit" />

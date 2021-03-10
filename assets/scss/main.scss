@@ -1,4 +1,6 @@
 $text: #30302E;
+$text-medium: #505050;
+$text-light: #999;
 $light-blue: #1B75BC;
 $dark-blue: #06517F;
 $baby-blue: #83C8FE;
@@ -20,6 +22,10 @@ $baby-blue: #83C8FE;
 * {
   font-family: 'Roboto'!important;
   color: $text;
+}
+
+img {
+  width: 100%;
 }
 
 .container-full-width {

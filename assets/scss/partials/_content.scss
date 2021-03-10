@@ -76,3 +76,74 @@
 .bcg-slider {
   background: linear-gradient(90deg, $light-blue -30.49%, $dark-blue 100%);
 }
+
+.bcg-stat {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    margin-right: 12px;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+
+    &--bank {
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  &__number {
+    font-size: 26px;
+    line-height: 33px;
+    color: $dark-blue;
+  }
+
+  &__description {
+    font-size: 20px;
+    line-height: 23px;
+    color: $text-medium;
+  }
+}
+
+.bcg-team-container {
+  background-color: #f4f4f4;
+}
+
+.team-member {
+  margin-bottom: 24px;
+
+  &__image {
+    border-radius: 6px;
+  }
+
+  &__name {
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: $dark-blue;
+  }
+
+  &__position {
+    font-size: 14px;
+    line-height: 16px;
+    color: $text-medium;
+  }
+
+}

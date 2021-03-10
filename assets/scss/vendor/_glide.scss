@@ -125,6 +125,32 @@
   border: 0;
 }
 
+@media only screen and (max-width: 767px) {
+  .glide {
+
+    &__arrows {
+      height: 50px;
+      margin-top: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__arrow {
+      margin-right: 16px;
+      position: static;
+      transform: none;
+    }
+  }
+
+  .bcg-slider {
+    .row,
+    .container {
+      padding: 0;
+    }
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .glide__slide img {
     width: 180px;
