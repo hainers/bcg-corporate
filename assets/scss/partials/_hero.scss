@@ -4,9 +4,10 @@
   background: url('../img/main-bg.jpg') center no-repeat;
   background-size: cover;
 
-  &--about {
+  &--about,
+  &--brands {
     position: relative;
-    background-image: url('../img/about.jpg');
+    background-size: 100% auto;
 
     &:before {
       content: '';
@@ -17,6 +18,15 @@
       bottom: 0;
       background: rgba(0,0,0,0.25);
     }
+  }
+
+  &--about {
+    background-image: url('../img/about.jpg');
+  }
+
+  &--brands {
+    background-position: top center;
+    background-image: url('../img/brands.jpg');
   }
 }
 
