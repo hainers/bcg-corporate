@@ -90,3 +90,28 @@ document.querySelectorAll('.bcg-brand-item').forEach(function(item) {
         }
     });
 });
+
+document.querySelectorAll('.bcg-field__input').forEach(function(item) {
+    item.addEventListener('focus', function(e) {
+        this.closest('.bcg-field').classList.add('bcg-field--focused');
+        console.log('focused', this.closest('.bcg-field'));
+    });
+
+    item.addEventListener('blur', function(e) {
+        if(this.value) {
+            this.closest('.bcg-field').classList.add('bcg-field--filled');
+        }
+        this.closest('.bcg-field').classList.remove('bcg-field--focused');
+        console.log('blurred', this.closest('.bcg-field'));
+    });
+
+    item.addEventListener('keyup', function(e) {
+        if(this.value) {
+            this.closest('.bcg-field').classList.add('bcg-field--filled');
+        } else {
+            this.closest('.bcg-field').classList.remove('bcg-field--filled');
+        }
+        console.log('keyup', this.value);
+    });
+
+});

@@ -4493,6 +4493,56 @@ strong {
     line-height: 75px;
   }
 }
+.bcg-field {
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  padding-top: 16px;
+  overflow: hidden;
+  transition: all 0.1s ease-in-out;
+}
+.bcg-field__label {
+  position: absolute;
+  top: 19px;
+  left: 8px;
+  width: 100%;
+  color: #505050;
+  transition: all 0.1s ease-in-out;
+}
+.bcg-field__input {
+  width: 100%;
+  border: 0;
+  padding: 8px 8px 8px;
+}
+.bcg-field--filled .bcg-field__label, .bcg-field--focused .bcg-field__label {
+  top: 8px;
+  font-size: 12px;
+}
+.bcg-field--focused {
+  border-color: #83C8FE;
+}
+.bcg-field--focused .bcg-field__label {
+  top: 8px;
+  font-size: 12px;
+  color: #1B75BC;
+}
+.bcg-button {
+  display: flex;
+  justify-content: flex-end;
+}
+.bcg-button button {
+  padding: 12px 40px;
+  background: #1B75BC;
+  border-radius: 4px;
+  border: 0;
+  outline: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
+}
+
 .animated {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
@@ -4600,11 +4650,11 @@ strong {
   background: url("../img/main-bg.jpg") center no-repeat;
   background-size: cover;
 }
-.hero-section--about, .hero-section--brands {
+.hero-section--about, .hero-section--brands, .hero-section--contact {
   position: relative;
   background-size: cover;
 }
-.hero-section--about:before, .hero-section--brands:before {
+.hero-section--about:before, .hero-section--brands:before, .hero-section--contact:before {
   content: "";
   position: absolute;
   top: 0;
@@ -4619,6 +4669,10 @@ strong {
 .hero-section--brands {
   background-position: top center;
   background-image: url("../img/brands.jpg");
+}
+.hero-section--contact {
+  background-position: top center;
+  background-image: url("../img/contact.jpg");
 }
 
 .menu-wrap {
@@ -4892,6 +4946,7 @@ strong {
   display: flex;
   align-items: center;
   margin-bottom: 40px;
+  text-decoration: none;
 }
 .bcg-stat__icon {
   display: flex;
@@ -4920,6 +4975,12 @@ strong {
   font-size: 20px;
   line-height: 23px;
   color: #505050;
+}
+.bcg-stat--contact .bcg-stat__description {
+  line-height: 1.5;
+}
+.bcg-stat--align-start {
+  align-items: flex-start;
 }
 
 .bcg-team-container {
