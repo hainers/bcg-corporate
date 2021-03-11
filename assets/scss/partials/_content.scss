@@ -228,7 +228,7 @@
 
 .bcg-brand-item {
   position: relative;
-  height: 120px;
+  height: 140px;
   margin-bottom: 24px;
   border-radius: 4px;
   overflow: hidden;
@@ -249,7 +249,7 @@
 
   &__logo {
     position: absolute;
-    top: 23%;
+    top: 19px;
     left: 50%;
     max-width: 80%;
     transform: translate(-50%);
@@ -271,7 +271,7 @@
   &__content {
     position: relative;
     background-color: #fefefe;
-    margin: 15% auto;
+    margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 90%;
@@ -344,6 +344,14 @@
   }
 }
 
+@media only screen and (min-width: 575px) {
+  .bcg-brand-item {
+    &__logo {
+      top: 23%;
+    }
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .bcg-brand-item {
     height: 130px;
@@ -355,6 +363,12 @@
     }
     &__logo {
       top: 32%;
+    }
+  }
+
+  .bcg-modal {
+    &__text {
+      padding: 32px;
     }
   }
 }

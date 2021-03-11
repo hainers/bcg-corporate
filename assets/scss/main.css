@@ -5013,7 +5013,7 @@ strong {
 }
 .bcg-brand-item {
   position: relative;
-  height: 120px;
+  height: 140px;
   margin-bottom: 24px;
   border-radius: 4px;
   overflow: hidden;
@@ -5033,7 +5033,7 @@ strong {
 }
 .bcg-brand-item__logo {
   position: absolute;
-  top: 23%;
+  top: 19px;
   left: 50%;
   max-width: 80%;
   transform: translate(-50%);
@@ -5054,7 +5054,7 @@ strong {
 .bcg-modal__content {
   position: relative;
   background-color: #fefefe;
-  margin: 15% auto;
+  margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 90%;
@@ -5116,6 +5116,11 @@ strong {
   max-width: 320px;
 }
 
+@media only screen and (min-width: 575px) {
+  .bcg-brand-item__logo {
+    top: 23%;
+  }
+}
 @media only screen and (min-width: 768px) {
   .bcg-brand-item {
     height: 130px;
@@ -5126,6 +5131,10 @@ strong {
   }
   .bcg-brand-modal__logo {
     top: 32%;
+  }
+
+  .bcg-modal__text {
+    padding: 32px;
   }
 }
 @media only screen and (min-width: 1200px) {
