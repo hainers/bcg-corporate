@@ -4602,7 +4602,7 @@ strong {
 }
 .hero-section--about, .hero-section--brands {
   position: relative;
-  background-size: 100% auto;
+  background-size: cover;
 }
 .hero-section--about:before, .hero-section--brands:before {
   content: "";

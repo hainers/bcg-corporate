@@ -7,7 +7,7 @@
   &--about,
   &--brands {
     position: relative;
-    background-size: 100% auto;
+    background-size: cover;
 
     &:before {
       content: '';
