@@ -405,3 +405,158 @@
     height: 148px;
   }
 }
+
+
+.bcg-news-item {
+  flex-direction: column;
+
+  &__image {
+    display: block;
+    margin-bottom: 12px;
+    outline : none;
+
+    img {
+      outline : none;
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 28px;
+    a,
+    a:hover,
+    a:visited,
+    a:focus {
+      color: $text;
+      text-decoration: none;
+    }
+  }
+
+  &__excerpt {
+    margin-bottom: 16px;
+    line-height: 20px;
+  }
+
+  &__readmore {
+    font-size: 14px;
+    font-weight: 500;
+    color: $dark-blue;
+    text-decoration: none;
+  }
+
+  &--small {
+    padding: 0;
+    margin-bottom: 32px;
+  }
+
+  &--full {
+
+    .bcg-news-item__title {
+      margin-bottom: 12px;
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    .bcg-news-item__image {
+      margin-bottom: 16px;
+    }
+    .bcg-news-item__readmore {
+      font-size: 18px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .bcg-news-item {
+
+    &--full {
+      .bcg-news-item__image {
+        margin-bottom: 0;
+      }
+
+      .bcg-news-item__title {
+        margin-bottom: 24px;
+        font-size: 32px;
+        line-height: 37px;
+      }
+
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .bcg-news-item {
+
+    &--small {
+      padding: 0 16px;
+      margin-bottom: 0;
+    }
+    &--full {
+      .bcg-news-item__image {
+        padding: 0 40px;
+      }
+    }
+  }
+}
+
+.bcg-pagination {
+  display: flex;
+  align-items: center;
+
+  &__number {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+    color: $text!important;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid transparent;
+
+    &--active {
+      font-weight: 500;
+      color: $dark-blue!important;
+      border: 2px solid $light-blue;
+      border-radius: 4px;
+    }
+
+    &:not(.bcg-pagination__number--disabled):hover {
+      border: 2px solid $light-blue;
+      border-radius: 4px;
+    }
+  }
+
+  &__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    background: $light-blue;
+    outline: none;
+    border: 0;
+    border-radius: 4px;
+    transition: background-color .2s ease-in-out;
+
+    img {
+      width: 12px;
+    }
+
+    &--left {
+      margin-right: 8px;
+    }
+
+    &--right {
+
+      img {
+        transform: rotate(180deg);
+      }
+    }
+
+    &:hover {
+      background: $dark-blue;
+    }
+  }
+}

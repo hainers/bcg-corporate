@@ -4542,6 +4542,21 @@ strong {
   background-color: #06517F;
 }
 
+.bcg-link-with-arrow {
+  display: inline-block;
+  position: relative;
+}
+.bcg-link-with-arrow:after {
+  content: "";
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: url("../img/icons/forward.svg") no-repeat center;
+  background-size: 100%;
+  margin-left: 4px;
+  transform: translateY(3px);
+}
+
 @media only screen and (min-width: 768px) {
   h1 {
     font-size: 64px;
@@ -4705,11 +4720,11 @@ strong {
   background: url("../img/main-bg.jpg") center no-repeat;
   background-size: cover;
 }
-.hero-section--about, .hero-section--brands, .hero-section--contact {
+.hero-section--about, .hero-section--brands, .hero-section--contact, .hero-section--news {
   position: relative;
   background-size: cover;
 }
-.hero-section--about:before, .hero-section--brands:before, .hero-section--contact:before {
+.hero-section--about:before, .hero-section--brands:before, .hero-section--contact:before, .hero-section--news:before {
   content: "";
   position: absolute;
   top: 0;
@@ -4726,6 +4741,14 @@ strong {
   background-image: url("../img/brands.jpg");
 }
 .hero-section--contact {
+  background-position: top center;
+  background-image: url("../img/contact.jpg");
+}
+.hero-section--news {
+  background-position: bottom left;
+  background-image: url("../img/news.jpg");
+}
+.hero-section--career {
   background-position: top center;
   background-image: url("../img/contact.jpg");
 }
@@ -5270,6 +5293,124 @@ strong {
     height: 148px;
   }
 }
+.bcg-news-item {
+  flex-direction: column;
+}
+.bcg-news-item__image {
+  display: block;
+  margin-bottom: 12px;
+  outline: none;
+}
+.bcg-news-item__image img {
+  outline: none;
+}
+.bcg-news-item__title {
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 28px;
+}
+.bcg-news-item__title a,
+.bcg-news-item__title a:hover,
+.bcg-news-item__title a:visited,
+.bcg-news-item__title a:focus {
+  color: #30302E;
+  text-decoration: none;
+}
+.bcg-news-item__excerpt {
+  margin-bottom: 16px;
+  line-height: 20px;
+}
+.bcg-news-item__readmore {
+  font-size: 14px;
+  font-weight: 500;
+  color: #06517F;
+  text-decoration: none;
+}
+.bcg-news-item--small {
+  padding: 0;
+  margin-bottom: 32px;
+}
+.bcg-news-item--full .bcg-news-item__title {
+  margin-bottom: 12px;
+  font-size: 24px;
+  line-height: 30px;
+}
+.bcg-news-item--full .bcg-news-item__image {
+  margin-bottom: 16px;
+}
+.bcg-news-item--full .bcg-news-item__readmore {
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 768px) {
+  .bcg-news-item--full .bcg-news-item__image {
+    margin-bottom: 0;
+  }
+  .bcg-news-item--full .bcg-news-item__title {
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 37px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .bcg-news-item--small {
+    padding: 0 16px;
+    margin-bottom: 0;
+  }
+  .bcg-news-item--full .bcg-news-item__image {
+    padding: 0 40px;
+  }
+}
+.bcg-pagination {
+  display: flex;
+  align-items: center;
+}
+.bcg-pagination__number {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 4px;
+  color: #30302E !important;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+.bcg-pagination__number--active {
+  font-weight: 500;
+  color: #06517F !important;
+  border: 2px solid #1B75BC;
+  border-radius: 4px;
+}
+.bcg-pagination__number:not(.bcg-pagination__number--disabled):hover {
+  border: 2px solid #1B75BC;
+  border-radius: 4px;
+}
+.bcg-pagination__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+  background: #1B75BC;
+  outline: none;
+  border: 0;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+.bcg-pagination__arrow img {
+  width: 12px;
+}
+.bcg-pagination__arrow--left {
+  margin-right: 8px;
+}
+.bcg-pagination__arrow--right img {
+  transform: rotate(180deg);
+}
+.bcg-pagination__arrow:hover {
+  background: #06517F;
+}
+
 * {
   font-family: "Roboto" !important;
   color: #30302E;
