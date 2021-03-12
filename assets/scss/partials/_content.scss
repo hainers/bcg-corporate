@@ -193,10 +193,22 @@
     background: linear-gradient(180deg, $light-blue -20%, $dark-blue 100%);
   }
 
+  &--dark-blue {
+    background: linear-gradient(180deg, #27446F 0%, #06517F 100%);
+  }
+
   &--image {
     min-height: 440px;
     background: url("../img/bcg-baltics.jpg") no-repeat center;
     background-size: cover;
+  }
+
+  &--office {
+    background-image: url("../img/office.jpg");
+  }
+
+  &--office2 {
+    background-image: url("../img/office2.jpg");
   }
 }
 
@@ -233,6 +245,10 @@
   .bcg-block {
     padding: 60px 40px;
     min-height: 400px;
+
+    &--office2 {
+      min-height: 600px;
+    }
   }
 }
 

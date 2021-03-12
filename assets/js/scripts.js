@@ -28,6 +28,15 @@ document.addEventListener("DOMContentLoaded", function() {
         glide.mount();
     }
 
+    if(document.querySelector('.gallery-glide')) {
+        var glide = new Glide('.gallery-glide', {
+            type: 'carousel',
+            startAt: 0,
+            perView: 1
+        })
+        glide.mount();
+    }
+
 });
 
 var $modal = document.querySelector('.bcg-modal');
