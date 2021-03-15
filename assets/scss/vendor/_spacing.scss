@@ -1357,3 +1357,9 @@
     margin-left: auto !important;
   }
 }
+@media only screen and (max-width: 575px) {
+  .py-mob-4 {
+    padding-top: 4rem!important;
+    padding-bottom: 4rem!important;
+  }
+}

@@ -4203,6 +4203,12 @@ html {
     margin-left: auto !important;
   }
 }
+@media only screen and (max-width: 575px) {
+  .py-mob-4 {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+}
 .glide {
   position: relative;
   width: 100%;
@@ -4905,6 +4911,11 @@ strong {
 @media only screen and (max-width: 374px) {
   .hero-section--long {
     height: 75vh;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .hero-section--long .hero-text {
+    margin-top: 60%;
   }
 }
 @media only screen and (max-width: 768px) {
