@@ -4733,6 +4733,17 @@ strong {
   bottom: 0;
   background: rgba(0, 0, 0, 0.25);
 }
+.hero-section--blank {
+  background: #fff;
+  height: 80px;
+  min-height: auto;
+}
+.hero-section--blank .bcg-menu__logo {
+  background: url("../img/BCG_logo.svg") no-repeat;
+}
+.hero-section--blank .bcg-menu__toggle {
+  background-image: url("../img/icons/menu_dark.svg");
+}
 .hero-section--about {
   background-image: url("../img/about.jpg");
 }
@@ -4762,6 +4773,7 @@ strong {
   margin-top: 8px;
 }
 .bcg-menu__logo {
+  display: block;
   width: 113px;
   height: 40px;
   background: url("../img/BCG_logo_w.svg") no-repeat;
@@ -4806,7 +4818,7 @@ strong {
 }
 @media only screen and (max-width: 768px) {
   .bcg-menu__nav {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -4819,7 +4831,7 @@ strong {
   .bcg-menu__nav:before {
     content: "";
     display: block;
-    margin: 16px 38px 48px;
+    margin: 16px 23px 48px;
     width: 113px;
     height: 40px;
     background: url("../img/BCG_logo.svg") no-repeat;
@@ -4852,7 +4864,11 @@ strong {
     margin-bottom: 48px;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
+  .hero-section--blank {
+    height: 170px;
+  }
+
   .bcg-menu {
     display: flex;
     align-items: center;
@@ -5306,8 +5322,8 @@ strong {
 }
 .bcg-news-item__title {
   margin-bottom: 16px;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 22px;
+  line-height: 26px;
 }
 .bcg-news-item__title a,
 .bcg-news-item__title a:hover,
@@ -5411,6 +5427,42 @@ strong {
   background: #06517F;
 }
 
+.bcg-news-view {
+  position: static;
+}
+.bcg-news-view__meta-info {
+  display: block;
+  margin-bottom: 32px;
+  text-align: center;
+  color: #666;
+}
+.bcg-news-view__title {
+  margin-bottom: 24px;
+  font-size: 42px;
+  line-height: 49px;
+  text-align: center;
+  color: #30302E;
+}
+.bcg-news-view img {
+  display: block;
+  margin: 24px 0;
+}
+.bcg-news-view p {
+  margin-bottom: 24px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.bcg-news-read-also-container {
+  background-color: #f2f2f2;
+}
+
+@media only screen and (min-width: 1200px) {
+  .bcg-news-view p {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
 * {
   font-family: "Roboto" !important;
   color: #30302E;

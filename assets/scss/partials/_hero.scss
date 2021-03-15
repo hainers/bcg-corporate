@@ -22,6 +22,22 @@
     }
   }
 
+  &--blank {
+    background: #fff;
+    height: 80px;
+    min-height: auto;
+
+    .bcg-menu {
+      &__logo {
+        background: url('../img/BCG_logo.svg') no-repeat;
+      }
+
+      &__toggle {
+        background-image: url('../img/icons/menu_dark.svg');
+      }
+    }
+  }
+
   &--about {
     background-image: url('../img/about.jpg');
   }
@@ -55,6 +71,7 @@
   padding: 8px;
   margin-top: 8px;
   &__logo {
+    display: block;
     width: 113px;
     height: 40px;
     background: url('../img/BCG_logo_w.svg') no-repeat;
@@ -114,7 +131,7 @@
 
 @media only screen and (max-width: 768px) {
    .bcg-menu__nav {
-     position: fixed;
+     position: absolute;
      top: 0;
      left: 0;
      width: 100%;
@@ -127,7 +144,7 @@
      &:before {
        content: '';
        display: block;
-       margin: 16px 38px 48px;
+       margin: 16px 23px 48px;
        width: 113px;
        height: 40px;
        background: url('../img/BCG_logo.svg') no-repeat;
@@ -173,7 +190,12 @@
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
+  .hero-section {
+    &--blank {
+      height: 170px;
+    }
+  }
   .bcg-menu {
     display: flex;
     align-items: center;
