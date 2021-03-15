@@ -23,6 +23,8 @@ $baby-blue: #83C8FE;
 * {
   font-family: 'Roboto'!important;
   color: $text;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 img {

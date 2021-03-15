@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="assets/scss/main.css">
 </head>
 <body>
-<header class="container container-full-width hero-section hero-section--contact animated fadeIn">
+<header class="container container-full-width hero-section hero-section--contact">
     <div class="container">
         <div class="row">
-            <div class="col-12 menu-wrap animated noFade">
+            <div class="col-12 menu-wrap">
                 <div class="bcg-menu">
                     <a href="/bcg-corporate/index.html" class="bcg-menu__logo"></a>
                     <div class="bcg-menu__toggle icon"></div>
@@ -29,15 +29,15 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12 col-md-8 col-lg-6 hero-text">
-                <h1 class="animated fadeInDown animate-delay-600">BCG Culture</h1>
+            <div class="col-sm-12 col-md-8 col-lg-6 hero-text wow fadeInDown">
+                <h1>BCG Culture</h1>
             </div>
         </div>
     </div>
 </header>
 
 <div class="container">
-    <div class="row py-6">
+    <div class="row py-6 wow fadeInDown" data-wow-delay="600ms">
         <div class="col-12 mb-6">
             <h2 class="text-center">Company Culture and Values</h2>
         </div>
@@ -47,7 +47,7 @@
     </div>
     <div class="row pt-2 pb-6">
         <div class="col-12">
-            <div class="gallery-glide">
+            <div class="gallery-glide wow fadeInLeft">
                 <div class="glide__track" data-glide-el="track">
                     <div class="glide__slides">
                         <div class="glide__slide"><img class="lazy" data-src="assets/img/people.jpg" alt=""></div>
@@ -64,7 +64,7 @@
         </div>
     </div>
     <div class="row mb-6 mt-md-4">
-        <div class="col-12">
+        <div class="col-12 wow fadeInRight">
             <h4 class="text-center mb-5 text-dark-blue">Our team</h4>
             <p class="text-big text-center text-medium-dark md-pb-6">We have fun and enjoy working together and that is our superpower. BCG has a dynamic and motivated team.  More than 130 employees and a leadership team of an average tenure at BCG of 12 years makes us specialists in our field. We are part of a fast growing and dynamic company. </p>
         </div>
@@ -74,19 +74,19 @@
 <div class="container bcg-blocks-container py-6">
     <div class="row">
         <div class="col-12 col-md-6 bcg-blocks">
-            <div class="bcg-block bcg-block bcg-block--image bcg-block--office"></div>
-            <div class="bcg-block bcg-block--blue">
+            <div class="bcg-block bcg-block bcg-block--image bcg-block--office  wow fadeInDown"></div>
+            <div class="bcg-block bcg-block--blue wow fadeInLeft" data-wow-delay="200ms">
                 <h3 class="text-white">Our people</h3>
                 <p class="text-white">We have an average of 6 years of tenure.</p>
                 <p class="text-white">We have a split of 55% male 45% female colleagues.</p>
             </div>
         </div>
         <div class="col-12 col-md-6 bcg-blocks bcg-blocks--neg-margin bcg-blocks--swap">
-            <div class="bcg-block bcg-block--blue bcg-block--dark-blue">
+            <div class="bcg-block bcg-block--blue bcg-block--dark-blue  wow fadeInRight">
                 <h3 class="text-white">Our offices</h3>
                 <p class="text-white">BCG is organised as a matrix structure with central senior management in Lithuania. BCG has offices in Vilnius (LT), Riga (LV), Tallinn and Tartu (EE)</p>
             </div>
-            <div class="bcg-block bcg-block--image bcg-block--office2"></div>
+            <div class="bcg-block bcg-block--image bcg-block--office2 wow fadeInUp" data-wow-delay="200ms"></div>
         </div>
     </div>
 </div>
@@ -126,10 +126,12 @@
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.7.0/intersection-observer.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js" integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg==" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 <script src="assets/js/scripts.js"></script>
 <script>
     (function () {
+        new WOW().init();
         function logElementEvent(eventName, element) {
             console.log(Date.now(), eventName, element.getAttribute("data-src"));
         }

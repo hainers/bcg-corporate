@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="assets/scss/main.css">
 </head>
 <body>
-<header class="container container-full-width hero-section hero-section--news animated fadeIn">
+<header class="container container-full-width hero-section hero-section--news">
     <div class="container">
         <div class="row">
-            <div class="col-12 menu-wrap animated noFade">
+            <div class="col-12 menu-wrap">
                 <div class="bcg-menu">
                     <a href="/bcg-corporate/index.html" class="bcg-menu__logo"></a>
                     <div class="bcg-menu__toggle icon"></div>
@@ -29,8 +29,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12 col-md-8 col-lg-6 hero-text">
-                <h1 class="animated fadeInDown animate-delay-600">News</h1>
+            <div class="col-sm-12 col-md-8 col-lg-6 hero-text wow fadeInDown">
+                <h1>News</h1>
             </div>
         </div>
     </div>
@@ -39,8 +39,8 @@
 <div class="container">
     <div class="row">
         <div class="col-12 pt-4 pb-5">
-            <div class="col-12 mb-5"><h2>Latest news</h2></div>
-            <div class="row bgc-news-item bcg-news-item--full">
+            <div class="col-12 mb-5 wow fadeInLeft" data-wow-delay="600ms"><h2>Latest news</h2></div>
+            <div class="row bgc-news-item bcg-news-item--full wow fadeInLeft" data-wow-delay="600ms">
                 <a class="col-12 col-md-6 bcg-news-item__image" href="/bcg-corporate/news-item.html">
                     <img src="assets/img/newsitem.jpg" alt="">
                 </a>
@@ -50,7 +50,7 @@
                     <a href="/bcg-corporate/news-item.html" class="bcg-news-item__readmore">Read more</a>
                 </div>
             </div>
-            <div class="row py-4 py-md-5">
+            <div class="row py-4 py-md-5 wow fadeInUp">
                 <div class="col-12 col-md-6 col-lg-4 bcg-news-item bcg-news-item--small">
                     <a class="col-12 bcg-news-item__image" href="/bcg-corporate/news-item.html">
                         <img src="assets/img/newsitem.jpg" alt="">
@@ -79,7 +79,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row bgc-news-item bcg-news-item--full">
+            <div class="row bgc-news-item bcg-news-item--full wow fadeInLeft">
                 <a class="col-12 col-md-6 bcg-news-item__image" href="/bcg-corporate/news-item.html">
                     <img src="assets/img/newsitem.jpg" alt="">
                 </a>
@@ -89,7 +89,7 @@
                     <a href="/bcg-corporate/news-item.html" class="bcg-news-item__readmore">Read more</a>
                 </div>
             </div>
-            <div class="row pt-4 pb-4 pt-md-5 pb-md-0">
+            <div class="row pt-4 pb-4 pt-md-5 pb-md-0 wow fadeInLeft">
                 <div class="col-12 col-md-6 col-lg-4 bcg-news-item bcg-news-item--small">
                     <a class="col-12 bcg-news-item__image" href="/bcg-corporate/news-item.html">
                         <img src="assets/img/newsitem.jpg" alt="">
@@ -169,10 +169,12 @@
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.7.0/intersection-observer.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js" integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg==" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 <script src="assets/js/scripts.js"></script>
 <script>
     (function () {
+        new WOW().init();
         function logElementEvent(eventName, element) {
             console.log(Date.now(), eventName, element.getAttribute("data-src"));
         }
