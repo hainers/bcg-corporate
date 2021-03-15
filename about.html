@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="assets/scss/main.css">
 </head>
 <body>
-<header class="container container-full-width hero-section hero-section--long hero-section--about animated fadeIn">
+<header class="container container-full-width hero-section hero-section--long hero-section--about">
     <div class="container">
         <div class="row">
-            <div class="col-12 menu-wrap animated noFade">
+            <div class="col-12 menu-wrap">
                 <div class="bcg-menu">
                     <a href="/bcg-corporate/index.html" class="bcg-menu__logo"></a>
                     <div class="bcg-menu__toggle icon"></div>
@@ -29,8 +29,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12 col-md-8 col-lg-6 hero-text">
-                <h1 class="animated fadeInDown animate-delay-600">Leading online classifieds in the Baltics</h1>
+            <div class="col-sm-12 col-md-8 col-lg-6 hero-text wow fadeInDown">
+                <h1>Leading online classifieds in the Baltics</h1>
             </div>
         </div>
     </div>
@@ -38,7 +38,7 @@
 
 <div class="container container-full-width py-6 bcg-slider">
     <div class="container">
-        <div class="row">
+        <div class="row wow fadeInDown" data-wow-delay="600ms">
             <div class="col-12 col-md-10 offset-md-1 col-xl-12 offset-xl-0">
                 <h3 class="text-white mb-5">Our brands</h3>
                 <div class="glide">
@@ -70,7 +70,7 @@
 </div>
 
 <div class="container">
-    <div class="row py-6">
+    <div class="row py-6 wow fadeInUp">
         <div class="col-12 mb-6">
             <h2 class="text-center">About</h2>
         </div>
@@ -79,13 +79,13 @@
         </div>
     </div>
     <div class="row mb-6 mt-md-4">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 wow fadeInLeft">
             <h4 class="text-center mb-5 text-dark-blue">Structure</h4>
             <p class="text-big text-center text-medium-dark">BCG operates across Baltics through the companies: Diginet LTU in Lithuania, AllePal OÜ and Kinnisvaraportaal OÜ in Estonia, and City24 SIA in Latvia.
                 Lithuania is the largest market for BCG where the company owns Autoplius.lt, Skelbiu.lt, Aruodas.lt, CVbankas.lt, Kainos.lt and Paslaugos.lt. Estonia is it’s second largest, with a uto24.ee, KV.ee, City24.ee, Osta.ee and KuldneBörs.ee. In Latvia, BCG owns City24.lv.
             </p>
         </div>
-        <div class="col-12 col-md-6 mt-6 mt-sm-0">
+        <div class="col-12 col-md-6 mt-6 mt-sm-0 wow fadeInRight">
             <h4 class="text-center mb-5 text-dark-blue">Experienced team</h4>
             <p class="text-big text-center text-medium-dark">More than 130  employees and a leadership team of an average tenure at BCG of 12 years. BCG is organised as a matrix structure with central senior management in Lithuania. BCG has offices in Vilnius (LT), Riga (LV), Tallinn and Tartu (EE).</p>
         </div>
@@ -95,7 +95,7 @@
 <div class="container bcg-blocks-container py-6">
     <div class="row">
         <div class="col-12 col-md-6 bcg-blocks">
-            <div class="bcg-block bcg-block--gray">
+            <div class="bcg-block bcg-block--gray wow fadeInDown">
                 <h3 class="text-dark-blue">Internet usage</h3>
                 <p>
                     Population to use home internet:<br>
@@ -108,19 +108,19 @@
                     The Digital Economy and Society Index (DESI), EU rank: Lithuania 14, Latvia 19, Estonia 7.
                 </p>
             </div>
-            <div class="bcg-block bcg-block--blue">
+            <div class="bcg-block bcg-block--blue wow fadeInLeft" data-wow-delay="200ms">
                 <h3 class="text-white">Sustainability</h3>
                 <p class="text-white">In BCG we see users as the environmental superheros. Our classified portals connect buyers and sellers with pre-loved goods and give a second life to those products reducing environmental footprint and making the world a greener place.</p>
             </div>
         </div>
         <div class="col-12 col-md-6 bcg-blocks bcg-blocks--neg-margin bcg-blocks--swap">
-            <div class="bcg-block bcg-block--blue">
+            <div class="bcg-block bcg-block--blue wow fadeInRight">
                 <h3 class="text-white">The Baltics are leaders in GDP per capita growth in EU.</h3>
                 <p class="text-white">GDP per capita growth 2000-2019 in EU*: Lithuania #1, Latvia #2, Estonia #4.</p>
                 <p class="text-white">Ease of doing business world rank 2020*: Lithuania #11, Latvia #19, Estonia #18.</p>
                 <p class="text-white">Economic freedom of the world rank 2020*: Lithuania #11, Latvia #19, Estonia #14.</p>
             </div>
-            <div class="bcg-block bcg-block--image"></div>
+            <div class="bcg-block bcg-block--image wow fadeInUp" data-wow-delay="200ms"></div>
         </div>
     </div>
 </div>
@@ -159,6 +159,12 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js" integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg==" crossorigin="anonymous"></script>
 <script src="assets/js/scripts.js"></script>
+<script>
+    (function () {
+        new WOW().init();
+    })();
+</script>
 </body>
 </html>
