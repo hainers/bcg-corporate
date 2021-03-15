@@ -115,10 +115,12 @@
 }
 
 .hero-text {
-  margin-top: 12%;
+  margin-top: 55%;
+  transform: translateY(-50%);
 
   &--less-margin {
     margin-top: 9%;
+    transform: none;
   }
 }
 
@@ -235,7 +237,15 @@
   }
 
   .hero-text {
-    margin-top: 12%;
+    margin-top: 40%;
+    &--less-margin {
+      margin-top: 9%;
+    }
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero-text {
+    margin-top: 25%;
     &--less-margin {
       margin-top: 9%;
     }
