@@ -4614,8 +4614,8 @@ strong {
 }
 
 .animated {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -4623,6 +4623,21 @@ strong {
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
 }
 
 .fadeIn {
@@ -4635,26 +4650,6 @@ strong {
   -webkit-animation-name: noFade;
   animation-name: noFade;
   animation-duration: 0s;
-}
-
-.animate-delay-600 {
-  animation-delay: 0.6s;
-}
-
-.animate-delay-1000 {
-  animation-delay: 1s;
-}
-
-.animate-delay-1500 {
-  animation-delay: 1.5s;
-}
-
-.animate-delay-2000 {
-  animation-delay: 2s;
-}
-
-.animate-duration-300 {
-  animation-duration: 0.3s;
 }
 
 @-webkit-keyframes fadeInDown {
@@ -4675,6 +4670,66 @@ strong {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 @-webkit-keyframes fadeIn {
@@ -4712,6 +4767,11 @@ strong {
 @media only screen and (max-width: 575px) {
   .hide-on-mobile {
     display: none !important;
+  }
+
+  .fadeInRight {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
   }
 }
 .hero-section {
