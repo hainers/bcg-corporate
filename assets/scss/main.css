@@ -4378,14 +4378,14 @@ html {
   position: relative;
 }
 .gallery-glide .glide__slide {
-  max-height: 440px;
+  max-height: none;
 }
 .gallery-glide .glide__slide img {
   width: 100% !important;
-  transform: translateY(-25%);
 }
 .gallery-glide__arrows {
   display: flex;
+  justify-content: center;
 }
 .gallery-glide__arrow {
   height: 44px;
@@ -4434,11 +4434,11 @@ html {
     padding: 0;
   }
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 767px) {
   .gallery-glide__arrows {
     justify-content: center;
     height: auto;
-    margin-top: -50px;
+    margin-top: 20px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -4453,8 +4453,7 @@ html {
   .glide__arrow--right {
     right: -3rem;
   }
-}
-@media only screen and (min-width: 992px) {
+
   .gallery-glide__arrows {
     position: absolute;
     bottom: 16px;
@@ -4536,12 +4535,13 @@ strong {
   position: relative;
   padding-left: 24px;
   margin-bottom: 16px;
+  line-height: 1.5;
 }
 .bcg-big-list__item:before {
   content: "";
   position: absolute;
   left: 0;
-  top: 1px;
+  top: 5px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -4812,11 +4812,11 @@ strong {
   background: url("../img/main-bg.jpg") center no-repeat;
   background-size: cover;
 }
-.hero-section--about, .hero-section--brands, .hero-section--contact, .hero-section--news {
+.hero-section--about, .hero-section--brands, .hero-section--contact, .hero-section--news, .hero-section--career {
   position: relative;
   background-size: cover;
 }
-.hero-section--about:before, .hero-section--brands:before, .hero-section--contact:before, .hero-section--news:before {
+.hero-section--about:before, .hero-section--brands:before, .hero-section--contact:before, .hero-section--news:before, .hero-section--career:before {
   content: "";
   position: absolute;
   top: 0;
@@ -4852,8 +4852,8 @@ strong {
   background-image: url("../img/news.jpg");
 }
 .hero-section--career {
-  background-position: top center;
-  background-image: url("../img/contact.jpg");
+  background-position: center;
+  background-image: url("../img/career.jpeg");
 }
 
 .menu-wrap {
@@ -5398,7 +5398,7 @@ strong {
 
 @media only screen and (min-width: 575px) {
   .bcg-brand-item__logo {
-    top: 23%;
+    top: 15%;
   }
 }
 @media only screen and (min-width: 768px) {

@@ -10,7 +10,8 @@ document.querySelector('.bcg-menu__toggle').addEventListener('click', function(e
 document.addEventListener("DOMContentLoaded", function() {
     if(document.querySelector('.glide')) {
         var glide = new Glide('.glide', {
-            type: 'carousel',
+            type: 'slider',
+            bound: true,
             startAt: 0,
             perView: 5,
             breakpoints: {

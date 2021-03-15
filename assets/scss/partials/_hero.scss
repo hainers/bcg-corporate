@@ -7,7 +7,8 @@
   &--about,
   &--brands,
   &--contact,
-  &--news {
+  &--news,
+  &--career {
     position: relative;
     background-size: cover;
 
@@ -58,8 +59,8 @@
   }
 
   &--career{
-    background-position: top center;
-    background-image: url('../img/contact.jpg');
+    background-position: center;
+    background-image: url('../img/career.jpeg');
   }
 }
 
