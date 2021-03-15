@@ -4865,6 +4865,9 @@ strong {
 .hero-text {
   margin-top: 12%;
 }
+.hero-text--less-margin {
+  margin-top: 9%;
+}
 
 @media only screen and (max-width: 359px) {
   .hero-section--long {
@@ -4959,6 +4962,9 @@ strong {
   }
   .hero-text {
     margin-top: 12%;
+  }
+  .hero-text--less-margin {
+    margin-top: 9%;
   }
 }
 .bcg-footer {

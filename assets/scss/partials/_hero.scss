@@ -116,6 +116,10 @@
 
 .hero-text {
   margin-top: 12%;
+
+  &--less-margin {
+    margin-top: 9%;
+  }
 }
 
 @media only screen and (max-width: 359px) {
@@ -232,5 +236,8 @@
 
   .hero-text {
     margin-top: 12%;
+    &--less-margin {
+      margin-top: 9%;
+    }
   }
 }
