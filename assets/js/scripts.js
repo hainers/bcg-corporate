@@ -33,7 +33,8 @@ document.addEventListener("DOMContentLoaded", function() {
         var glide = new Glide('.gallery-glide', {
             type: 'carousel',
             startAt: 0,
-            perView: 1
+            perView: 1,
+            autoplay: 6000
         })
         glide.mount();
     }
