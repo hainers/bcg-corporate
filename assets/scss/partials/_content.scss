@@ -297,6 +297,8 @@
   z-index: 10000;
 
   &__content {
+    max-height: 90vh;
+    overflow-y: auto;
     position: relative;
     background-color: #fefefe;
     margin: 5% auto;
@@ -305,7 +307,7 @@
     width: 90%;
     max-width: 620px;
     border-radius: 4px;
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   &__close {

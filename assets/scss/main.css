@@ -5333,6 +5333,8 @@ strong {
   z-index: 10000;
 }
 .bcg-modal__content {
+  max-height: 90vh;
+  overflow-y: auto;
   position: relative;
   background-color: #fefefe;
   margin: 5% auto;
@@ -5341,7 +5343,7 @@ strong {
   width: 90%;
   max-width: 620px;
   border-radius: 4px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .bcg-modal__close {
   color: #fff;
