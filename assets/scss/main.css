@@ -4853,7 +4853,7 @@ strong {
 }
 .hero-section--career {
   background-position: center;
-  background-image: url("../img/career.jpeg");
+  background-image: url("../img/bcgnews.jpg");
 }
 
 .menu-wrap {
@@ -5174,13 +5174,14 @@ strong {
   height: 50px;
 }
 .bcg-stat__number {
-  font-size: 26px;
-  line-height: 33px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
   color: #06517F;
 }
 .bcg-stat__description {
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 16px;
+  line-height: 20px;
   color: #505050;
 }
 .bcg-stat--contact .bcg-stat__description {

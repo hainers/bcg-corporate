@@ -107,14 +107,15 @@
   }
 
   &__number {
-    font-size: 26px;
-    line-height: 33px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
     color: $dark-blue;
   }
 
   &__description {
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 16px;
+    line-height: 20px;
     color: $text-medium;
   }
 
