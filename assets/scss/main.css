@@ -4966,6 +4966,11 @@ strong {
     margin-bottom: 48px;
   }
 }
+@media only screen and (min-width: 575px) and (orientation: landscape) {
+  .hero-section {
+    min-height: 700px;
+  }
+}
 @media only screen and (min-width: 769px) {
   .hero-section--blank {
     height: 170px;
