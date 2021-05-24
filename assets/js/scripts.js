@@ -114,8 +114,8 @@ if($downloadModalClose) {
 
 document.querySelectorAll('.js-bcg-download-link').forEach(function(item) {
     item.addEventListener('click', function(e) {
-
-       if(localStorage.getItem('bcgCountry')) {
+        var lsEnabled = false;
+       if(localStorage.getItem('bcgCountry') && lsEnabled) {
            return;
        } else {
            e.preventDefault();
@@ -132,6 +132,9 @@ $downloadSubmit.addEventListener('click', function(e) {
     if(downloadCountry) {
         $downloadSubmit.href = downloadLink;
         $downloadSubmit.click();
+        this.closest('.bcg-download-modal').classList.remove('bcg-modal--show');
+    } else {
+        e.preventDefault();
     }
 });
 
