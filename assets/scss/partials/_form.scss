@@ -57,7 +57,9 @@
 .bcg-button {
   display: flex;
   justify-content: flex-end;
-  button {
+
+  button,
+  a {
     padding: 12px 40px;
     background: $light-blue;
     border-radius: 4px;
@@ -67,5 +69,7 @@
     font-size: 18px;
     line-height: 23px;
     color: #fff;
+    cursor: pointer;
+    text-decoration: none;
   }
 }

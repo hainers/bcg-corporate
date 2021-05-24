@@ -102,6 +102,41 @@ document.querySelectorAll('.bcg-brand-item').forEach(function(item) {
     });
 });
 
+var $downloadModal = document.querySelector('.bcg-download-modal');
+var $downloadModalClose = document.querySelector('.bcg-modal__close');
+var $downloadSubmit = document.querySelector('.bcg-modal__download');
+var downloadLink = '';
+if($downloadModalClose) {
+    $downloadModalClose.addEventListener('click', function() {
+        this.closest('.bcg-download-modal').classList.remove('bcg-modal--show');
+    })
+};
+
+document.querySelectorAll('.js-bcg-download-link').forEach(function(item) {
+    item.addEventListener('click', function(e) {
+
+       if(localStorage.getItem('bcgCountry')) {
+           return;
+       } else {
+           e.preventDefault();
+           $downloadModal.classList.add('bcg-modal--show');
+           downloadLink = e.target.href;
+       }
+    });
+});
+
+$downloadSubmit.addEventListener('click', function(e) {
+    var downloadCountry = document.getElementById('countrySelect').value;
+    localStorage.setItem('bcgCountry', downloadCountry);
+
+    if(downloadCountry) {
+        $downloadSubmit.href = downloadLink;
+        $downloadSubmit.click();
+    }
+});
+
+
+
 document.querySelectorAll('.bcg-field__input').forEach(function(item) {
     item.addEventListener('focus', function(e) {
         this.closest('.bcg-field').classList.add('bcg-field--focused');
@@ -126,3 +161,12 @@ document.querySelectorAll('.bcg-field__input').forEach(function(item) {
     });
 
 });
+
+
+document.querySelector('.nav__item--with-dropdown').addEventListener('click', function(e) {
+    console.log(e);
+    if(e.target.matches('.nav-item-expand')) {
+        document.querySelector('.nav__item--with-dropdown').classList.toggle('nav__item--expanded');
+    }
+})
+

@@ -335,6 +335,19 @@
   }
 }
 
+.bcg-download-modal {
+  .bcg-modal__close {
+    color: #333;
+  }
+  .bcg-button {
+    justify-content: flex-start;
+
+    a {
+      padding: 8px 20px;
+    }
+  }
+}
+
 .bcg-brand-modal {
   overflow: hidden;
 
