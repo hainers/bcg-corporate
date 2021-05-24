@@ -5450,6 +5450,14 @@ strong {
 .bcg-download-modal .bcg-modal__close {
   color: #333;
 }
+.bcg-download-modal .bcg-modal__text {
+  padding: 16px 12px;
+}
+@media only screen and (min-width: 767px) {
+  .bcg-download-modal .bcg-modal__text {
+    padding: 24px;
+  }
+}
 .bcg-download-modal .bcg-button {
   justify-content: flex-start;
 }
