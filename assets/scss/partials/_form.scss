@@ -72,4 +72,16 @@
     cursor: pointer;
     text-decoration: none;
   }
+
+  &--green {
+    button, a {
+      background: green;
+    }
+  }
+
+  &--red {
+    button, a {
+      background: red;
+    }
+  }
 }

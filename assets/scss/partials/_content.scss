@@ -348,6 +348,14 @@
   }
 }
 
+.bcg-download-modal-slide {
+  display: none;
+
+  &-1 {
+    display: block;
+  }
+}
+
 .bcg-brand-modal {
   overflow: hidden;
 

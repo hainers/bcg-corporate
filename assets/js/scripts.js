@@ -105,17 +105,24 @@ document.querySelectorAll('.bcg-brand-item').forEach(function(item) {
 var $downloadModal = document.querySelector('.bcg-download-modal');
 var $downloadModalClose = document.querySelector('.bcg-modal__close');
 var $downloadSubmit = document.querySelector('.bcg-modal__download');
+var $downloadConfirm = document.querySelector('.js-bcg-download-confirm');
+var $downloadNotConfirm = document.querySelector('.js-bcg-download-not-confirm');
 var downloadLink = '';
 if($downloadModalClose) {
     $downloadModalClose.addEventListener('click', function() {
         this.closest('.bcg-download-modal').classList.remove('bcg-modal--show');
-    })
+        $downloadModal.querySelector('.bcg-download-modal-slide-1').style.display = 'block';
+        $downloadModal.querySelector('.bcg-download-modal-slide-2').style.display = 'none';
+        $downloadModal.querySelector('.bcg-download-modal-slide-3').style.display = 'none';
+        $downloadModal.querySelector('.bcg-download-modal-slide-4').style.display = 'none';
+    });
 };
 
 document.querySelectorAll('.js-bcg-download-link').forEach(function(item) {
     item.addEventListener('click', function(e) {
-        var lsEnabled = false;
-       if(localStorage.getItem('bcgCountry') && lsEnabled) {
+        var lsEnabled = true;
+        var lsCountryName = localStorage.getItem('bcgCountry')
+       if((lsCountryName === 'GB' || lsCountryName === 'US' || lsCountryName === 'other') && lsEnabled) {
            return;
        } else {
            e.preventDefault();
@@ -126,24 +133,40 @@ document.querySelectorAll('.js-bcg-download-link').forEach(function(item) {
 });
 
 if($downloadSubmit) {
+    var downloadCountry;
     $downloadSubmit.addEventListener('click', function(e) {
-        var downloadCountry = document.getElementById('countrySelect').value;
-        localStorage.setItem('bcgCountry', downloadCountry);
+        e.preventDefault();
+        downloadCountry = document.getElementById('countrySelect').value;
 
-        if(downloadCountry) {
-            $downloadSubmit.href = downloadLink;
-            $downloadSubmit.click();
-            this.closest('.bcg-download-modal').classList.remove('bcg-modal--show');
+        if(downloadCountry === 'GB' || downloadCountry === 'US' || downloadCountry === 'other') {
+            $downloadModal.querySelector('.bcg-download-modal-slide-1').style.display = 'none';
+            $downloadModal.querySelector('.bcg-download-modal-slide-3').style.display = 'block';
         } else {
-            e.preventDefault();
+            $downloadModal.querySelector('.bcg-download-modal-slide-1').style.display = 'none';
+            $downloadModal.querySelector('.bcg-download-modal-slide-2').style.display = 'block';
         }
+    });
+}
+
+if($downloadConfirm) {
+    $downloadConfirm.addEventListener('click', function(e) {
+        localStorage.setItem('bcgCountry', downloadCountry);
+        this.href = downloadLink;
+        this.closest('.bcg-download-modal').classList.remove('bcg-modal--show');
+    });
+}
+
+if($downloadNotConfirm) {
+    $downloadNotConfirm.addEventListener('click', function(e) {
+        e.preventDefault();
+        $downloadModal.querySelector('.bcg-download-modal-slide-3').style.display = 'none';
+        $downloadModal.querySelector('.bcg-download-modal-slide-4').style.display = 'block';
     });
 }
 
 document.querySelectorAll('.bcg-field__input').forEach(function(item) {
     item.addEventListener('focus', function(e) {
         this.closest('.bcg-field').classList.add('bcg-field--focused');
-        console.log('focused', this.closest('.bcg-field'));
     });
 
     item.addEventListener('blur', function(e) {
@@ -151,7 +174,6 @@ document.querySelectorAll('.bcg-field__input').forEach(function(item) {
             this.closest('.bcg-field').classList.add('bcg-field--filled');
         }
         this.closest('.bcg-field').classList.remove('bcg-field--focused');
-        console.log('blurred', this.closest('.bcg-field'));
     });
 
     item.addEventListener('keyup', function(e) {
@@ -160,14 +182,12 @@ document.querySelectorAll('.bcg-field__input').forEach(function(item) {
         } else {
             this.closest('.bcg-field').classList.remove('bcg-field--filled');
         }
-        console.log('keyup', this.value);
     });
 
 });
 
 
 document.querySelector('.nav__item--with-dropdown').addEventListener('click', function(e) {
-    console.log(e);
     if(e.target.matches('.nav-item-expand')) {
         document.querySelector('.nav__item--with-dropdown').classList.toggle('nav__item--expanded');
     }

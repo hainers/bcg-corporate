@@ -38,7 +38,7 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ul {
   list-style: none;
 }
 
@@ -4621,6 +4621,12 @@ strong {
   cursor: pointer;
   text-decoration: none;
 }
+.bcg-button--green button, .bcg-button--green a {
+  background: green;
+}
+.bcg-button--red button, .bcg-button--red a {
+  background: red;
+}
 
 .animated {
   -webkit-animation-duration: 1s;
@@ -5449,6 +5455,13 @@ strong {
 }
 .bcg-download-modal .bcg-button a {
   padding: 8px 20px;
+}
+
+.bcg-download-modal-slide {
+  display: none;
+}
+.bcg-download-modal-slide-1 {
+  display: block;
 }
 
 .bcg-brand-modal {
