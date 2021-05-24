@@ -4622,10 +4622,10 @@ strong {
   text-decoration: none;
 }
 .bcg-button--green button, .bcg-button--green a {
-  background: green;
+  background: #1cb775;
 }
 .bcg-button--red button, .bcg-button--red a {
-  background: red;
+  background: #ED4337;
 }
 
 .animated {
@@ -5455,6 +5455,9 @@ strong {
 }
 .bcg-download-modal .bcg-button a {
   padding: 8px 20px;
+}
+.bcg-download-modal p {
+  line-height: 1.2;
 }
 
 .bcg-download-modal-slide {
