@@ -5020,6 +5020,7 @@ strong {
   }
   .nav__item--with-dropdown .dropdown {
     position: static;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 992px) {
