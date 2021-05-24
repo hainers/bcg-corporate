@@ -125,20 +125,20 @@ document.querySelectorAll('.js-bcg-download-link').forEach(function(item) {
     });
 });
 
-$downloadSubmit.addEventListener('click', function(e) {
-    var downloadCountry = document.getElementById('countrySelect').value;
-    localStorage.setItem('bcgCountry', downloadCountry);
+if($downloadSubmit) {
+    $downloadSubmit.addEventListener('click', function(e) {
+        var downloadCountry = document.getElementById('countrySelect').value;
+        localStorage.setItem('bcgCountry', downloadCountry);
 
-    if(downloadCountry) {
-        $downloadSubmit.href = downloadLink;
-        $downloadSubmit.click();
-        this.closest('.bcg-download-modal').classList.remove('bcg-modal--show');
-    } else {
-        e.preventDefault();
-    }
-});
-
-
+        if(downloadCountry) {
+            $downloadSubmit.href = downloadLink;
+            $downloadSubmit.click();
+            this.closest('.bcg-download-modal').classList.remove('bcg-modal--show');
+        } else {
+            e.preventDefault();
+        }
+    });
+}
 
 document.querySelectorAll('.bcg-field__input').forEach(function(item) {
     item.addEventListener('focus', function(e) {
